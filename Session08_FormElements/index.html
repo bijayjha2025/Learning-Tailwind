@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold mb-8">Tailwind Form Elements</h1>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Text Inputs</h2>
+          <div class="space-y-4">
+           <input type="text" placeholder="Default" class="w-full px-4 py-2 border rounded">
+           <input type="text" placeholder="Blue focus" class="w-full px-4 py-2 border-2 rounded focus:border-blue-500 focus:outline-none">
+           <input type="text" placeholder="Shadow" class="w-full px-4 py-2 border rounded shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Checkboxes</h2>
+          <div class="space-y-3">
+           <label class="flex items-center space-x-3">
+           <input type="checkbox" class="w-5 h-5 text-blue-500 rounded">
+           <span>Default checkbox</span>
+           </label>
+                
+           <label class="flex items-center space-x-3">
+           <input type="checkbox" class="w-6 h-6 text-green-900 rounded">
+           <span>Larger checkbox</span>
+           </label>
+                
+           <label class="flex items-center space-x-3">
+           <input type="checkbox" checked class="w-5 h-5 text-purple-500 rounded">
+           <span>Pre-checked</span>
+           </label>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Radio Buttons</h2>
+         <div class="space-y-3">
+          <label class="flex items-center space-x-3">
+          <input type="radio" name="option" class="w-5 h-5 text-blue-500">
+          <span>Option 1</span>
+          </label>
+                
+          <label class="flex items-center space-x-3">
+          <input type="radio" name="option" class="w-5 h-5 text-blue-500" checked>
+          <span>Option 2 (selected)</span>
+          </label>
+                
+          <label class="flex items-center space-x-3">
+          <input type="radio" name="option" class="w-5 h-5 text-blue-500">
+          <span>Option 3</span>
+          </label>
+         </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Select Dropdown</h2>
+          <select class="w-full px-4 py-2 border rounded focus:border-green-500 focus:outline-none">
+           <option>Choose an option</option>
+           <option>Option 1</option>
+           <option>Option 2</option>
+           <option>Option 3</option>
+          </select>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Textarea</h2>
+          <textarea placeholder="Enter your message..." class="w-full px-4 py-2 border rounded focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-blue-200" rows="4"></textarea>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow mb-8">
+         <h2 class="text-xl font-bold mb-4">Buttons</h2>
+         <div class="flex flex-wrap gap-3">
+           <button class="px-6 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Primary</button>
+           <button class="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-600">Success</button>
+           <button class="px-6 py-2 bg-red-500 text-white rounded hover:bg-red-600">Danger</button>
+           <button class="px-6 py-2 border-2 border-gray-500 text-gray-700 rounded hover:bg-gray-100">Outline</button>
+         </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow">
+         <h2 class="text-xl font-bold mb-4">Toggle</h2>
+         <label class="flex items-center space-x-3 cursor-pointer">
+         <div class="relative">
+          <input type="checkbox" class="sr-only peer">
+          <div class="w-14 h-8 bg-gray-300 rounded-full peer-checked:bg-green-500 transition"></div>
+          <div class="absolute left-1 top-1 w-6 h-6 bg-white rounded-full transition peer-checked:translate-x-6"></div>
+         </div>
+         <span>Enable</span>
+         </label>
+        </div>
+        
+    </div>
+</body>
+</html>
