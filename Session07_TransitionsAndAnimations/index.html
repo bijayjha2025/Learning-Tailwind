@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions & Animations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="max-w-4xl mx-auto">
+     <h1 class="text-3xl font-semibold mb-8">Learning Tailwind Transitions & Animations</h1>
+
+     <div class="bg-white p-6 rounded-lg shadow mb-8">
+      <div class="grid grid-cols-2 gap-4">
+       <button class="bg-red-500 text-white px-6 py-3 rounded transition hover:bg-blue-700">Transition</button>
+       <button class="bg-green-500 text-white px-6 py-3 rounded transition-all hover:bg-green-700 hover:scale-110">Scale and Transition</button>
+       <button class="bg-blue-500 text-white px-6 py-3 rounded transition-colors duration-500 hover:bg-purple-900">ColorTransition</button>
+       <button class="bg-violet-500 text-white px-6 py-3 rounded transition-transform hover:rotate-12 hover:scale-105">Transform</button>
+      </div>
+     </div>
+    </div>
+</body>
+</html>
